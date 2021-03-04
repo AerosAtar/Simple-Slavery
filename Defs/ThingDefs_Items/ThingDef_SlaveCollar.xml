@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<ThingDef Name="ApparelBase" Abstract="True">
+	<ThingDef Name="SS_ApparelBase" Abstract="True">
 		<thingClass>Apparel</thingClass>
 		<category>Item</category>
 		<selectable>True</selectable>
@@ -32,7 +32,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef Name="ArmorMakeableBase" ParentName="ApparelBase" Abstract="True">
+	<ThingDef Name="SS_ArmorMakeableBase" ParentName="SS_ApparelBase" Abstract="True">
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -42,7 +42,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef Name="SlaveCollarBase" ParentName="ArmorMakeableBase" Abstract="True">
+	<ThingDef Name="SS_SlaveCollarBase" ParentName="SS_ArmorMakeableBase" Abstract="True">
 		<useHitPoints>True</useHitPoints>
 		<statBases>
 			<Flammability>0</Flammability>
@@ -73,7 +73,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef ParentName="SlaveCollarBase">
+	<ThingDef ParentName="SS_SlaveCollarBase">
 		<defName>Apparel_SlaveCollar_Explosive</defName>
 		<thingClass>SimpleSlavery.SlaveCollar_Explosive</thingClass>
 		<tickerType>Normal</tickerType>
@@ -107,7 +107,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef ParentName="SlaveCollarBase">
+	<ThingDef ParentName="SS_SlaveCollarBase">
 		<defName>Apparel_SlaveCollar_Electric</defName>
 		<thingClass>SimpleSlavery.SlaveCollar_Electric</thingClass>
 		<tickerType>Normal</tickerType>
@@ -142,7 +142,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef ParentName="SlaveCollarBase">
+	<ThingDef ParentName="SS_SlaveCollarBase">
 		<defName>Apparel_SlaveCollar_Crypto</defName>
 		<thingClass>SimpleSlavery.SlaveCollar_Crypto</thingClass>
 		<label>crypto collar</label>
@@ -177,7 +177,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef ParentName="SlaveCollarBase">
+	<ThingDef ParentName="SS_SlaveCollarBase">
 		<defName>Apparel_SlaveCollar</defName>
 		<label>slave collar</label>
 		<description>A metal collar fastened around the necks of slaves.</description>
@@ -198,7 +198,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef ParentName="SlaveCollarBase">
+	<ThingDef ParentName="SS_SlaveCollarBase">
 		<defName>Apparel_SlaveCollar_Tribal</defName>
 		<label>tribal slave collar</label>
 		<description>A simple leather collar fastened around the necks of slaves.</description>
