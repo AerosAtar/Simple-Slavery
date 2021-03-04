@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<Defs>
-	<ThoughtDef Name="DeathMemory" Abstract="True">
-		<stackLimit>5</stackLimit>
-	</ThoughtDef>
-</Defs>
